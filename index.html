@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spline Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/b0f0967186.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME EXAMPLE 
+      https://fontawesome.com/v4/icons/
+     
+      <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+    
+      <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    
+      <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> 
+    -->
+</head>
+
+<body>
+
+
+    <div class="background">
+    </div>
+    <!-- TODO: Remove Spline -->
+    <iframe src='https://my.spline.design/fbxtest-7d6888931f9d4988e2f38eff1d2d0675/' frameborder='0' width='100%'
+        height='100vh' class="background" id="viewer"></iframe>
+
+    <nav class="nav-main">
+        <p>Welcome to my Spline 3D Portfolio</p>
+    </nav>
+
+    <div class="container" onresize="collapseAll()">
+
+        <section class="leftMenuContainer">
+            <div class="leftSideMenu" id="leftSideMenu"></div>
+            <button onclick="togglePanel()" class="arrowBtn arrowBtn__left">
+                <i class="fa fa-caret-left" aria-hidden="true"></i>
+            </button>
+        </section>
+
+        <section class="rightMenuContainer">
+            <div class="sideMenu" id="sideMenu"></div>
+            <button onclick="rightTogglePanel()" class="arrowBtn arrowBtn__right">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </button>
+            <div class="rightSideMenu" id="rightSideMenu"></div>
+        </section>
+
+        <nav id="topBtns" class="mainButtons">
+            <button onclick="changeViewer()" class="sqrBtn">
+                <i class="fa fa-male" aria-hidden="true"></i>
+                <!-- <i class="fa fa-refresh fa-fw"></i> -->
+            </button>
+            <button onclick="changeViewer2()" class="sqrBtn">
+                <i class="fa fa-codepen" aria-hidden="true"></i>
+            </button>
+            <!-- <button id="pen" onclick="loadModelCheck(id)" class="sqrBtn">
+                <i class="fa fa-arrow-circle-left fa-3x fa-book" aria-hidden="true"></i>
+            </button> -->
+            <button id="pen" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-pen" aria-hidden="true"></i>
+            </button>
+            <button id="industrial" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-pen" aria-hidden="true"></i>
+            </button>
+            <button id="ikki-toon" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-fire" aria-hidden="true"></i>
+            </button>
+            <button id="logo-pm" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+            </button>
+            <button id="patoon" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </button>
+            <button id="adakort" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-book" aria-hidden="true"></i>
+            </button>
+            <button id="grilla" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-book" aria-hidden="true"></i>
+            </button>
+            <button id="balls" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-soccer-ball-o" aria-hidden="true"></i>
+            </button>
+            <button id="futuristic" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-television" aria-hidden="true"></i>
+            </button>
+
+            <button id="orco" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-male" aria-hidden="true"></i>
+            </button>
+            <button id="iphone" onclick="loadModel(id)" class="sqrBtn">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </button>
+            <!-- <button disabled onclick="sayHi()" class="sqrBtn">
+          <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+        </button>
+        <button onclick="toggleSidePanel()" class="sqrBtn">
+          <i class="fa fa-window-maximize" aria-hidden="true"></i>
+        </button> -->
+
+        </nav>
+
+        <nav id="bottomBtns" class="mainButtons bottomBtns">
+            <button disabled onclick="myFunction()" class="sqrBtn">
+                <i class="fa fa-caret-left" aria-hidden="true"></i>
+            </button>
+            <button disabled onclick="sayHi()" class="sqrBtn">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </button>
+            <button disabled onclick="sayHi()" class="sqrBtn">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </button>
+            <button disabled onclick="sayHi()" class="sqrBtn">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </button>
+            <button disabled onclick="sayHi()" class="sqrBtn">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </button>
+            <button onclick="toggleSidePanel()" class="sqrBtn">
+                <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            </button>
+
+        </nav>
+
+    </div>
+
+
+</body>
+
+</html>
